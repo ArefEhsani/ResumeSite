@@ -161,8 +161,18 @@ function ShowSlide(n) {
 
 function AutoChangeSlider() {
     index = Math.floor(Math.random() * 3)
-    console.log(index)
     ShowSlide(index)
 }
 
 var timer = window.setInterval(AutoChangeSlider, 2000);
+
+
+document.getElementById("change-theme-btn").onclick = function() {
+    var Theme = document.getElementById("theme-src")
+    var ThemeLink = Theme.href
+    if (ThemeLink.includes("css/mdb.min.css")) {
+        Theme.href = "css/mdb.dark.min.css"
+    } else if (ThemeLink.includes("css/mdb.dark.min.css")) {
+        Theme.href = "css/mdb.min.css"
+    }
+}
