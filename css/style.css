@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "iran-sans";
+    src: url("../font/IRANSans.ttf");
+}
+
+* {
+    font-family: "iran-sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+   /*  background: #eee; */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #262626;
+    overflow-x: hidden;
+    transition: 200ms;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a .icon i {
+    font-size: 1.4rem;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.sidenav .closebtn:hover {
+    color: rgb(177, 177, 177);
+}
+
+.navigation ul li.active {
+    background: #3E7C17;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navigation ul li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #26262600;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #3E7C17;
+}
+
+.navigation ul li.active a::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #26262600;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #3E7C17;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main */
+#main {
+    transition: margin-right 200ms;
+    overflow-x: hidden;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*icon open */
+.icon-open {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 10000;
+    color: #3E7C17;
+    background-color: #dddddd8f;
+    border-radius: 50%;
+    
+}
+
+/* home */
+.bg-header {
+    background-image: url("../img/header.jpg");
+    height: 100vh;
+}
+
+/* about */
+.about-icon {
+    color: green;
+}
+
+.icon-bottom-about i {
+    animation: move 1s ease infinite;
+}
+
+@keyframes move {
+    25% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    75% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+/* skill */
+.skill {
+    background-color: rgba(27, 27, 27, 0.055);
+    padding-top: 20px;
+}
+
+.line-hr {
+    width: 90%;
+    height: 16px;
+    background-color: rgba(99, 99, 99, 0.219);
+}
+
+.color-hr {
+    background-color: #4ac000;
+    height: 15px;
+}
+
+/* work */
+.img {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background: black;
+}
+
+#image-place img {
+    border-radius: 15px;
+    transition: .4s;
+
+}
+
+#image-place img:hover {
+    opacity: .7;
+    transform: scale(1.3);
+
+}
+
+/* services */
+#services .item {
+    transition: all .4s;
+}
+
+#services .item:hover {
+    background-color: #5c5c5c;
+    color: #eee;
+}
+
+/* comments */
+.img-comment {
+    border: 10px solid #eee;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    bottom: -35px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #39C0ED;
+    background-color: #fff;
+    margin: 2px;
+}
+
+.circle:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.act {
+    background-color: #39C0ED;
+}
+
+/* contact */
+#contact {
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    margin: 30px 150px;
+    padding: 5px 30px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: rgb(201, 201, 201);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    background-color: #668b4e34;
+    outline: 1px solid green;
+}
