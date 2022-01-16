@@ -19,24 +19,16 @@ setInterval(EffectText, 4000)
 
 
 
-
-
-
-
 /* strat work */
-PlaceOfImage = document.getElementById("image-place")
-
-
-document.getElementById("all").onclick = function() {
-    ListOfAll = document.querySelectorAll(".team, .Horizontal")
+document.getElementById("all").onclick = function () {
+    ListOfAll = document.querySelectorAll(".team, .fardi")
     console.log(ListOfAll)
     for (let image = 0; image < ListOfAll.length; image++) {
         ListOfAll[image].style.display = "block"
     }
 }
 
-
-document.getElementById("team").onclick = function() {
+document.getElementById("team").onclick = function () {
     ListOfCollective = document.querySelectorAll(".team")
     ListOfIndividualHide = document.querySelectorAll(".fardi")
     console.log(ListOfCollective);
@@ -48,8 +40,7 @@ document.getElementById("team").onclick = function() {
     }
 }
 
-
-document.getElementById("fardi").onclick = function() {
+document.getElementById("fardi").onclick = function () {
     ListOfIndividual = document.querySelectorAll(".fardi")
     ListOfCollectiveHide = document.querySelectorAll(".team")
     console.log(ListOfIndividual)
@@ -79,12 +70,10 @@ function closeNav() {
 
 
 
-
 /* icon */
 function myFunction(x) {
     x.classList.toggle("change");
 }
-
 
 
 
@@ -133,7 +122,9 @@ window.addEventListener("scroll", () => {
     });
 });
 
-/* comments */
+
+
+/* comments slider */
 ShowSlide(0)
 
 function ShowSlide(n) {
@@ -166,8 +157,7 @@ function AutoChangeSlider() {
 
 var timer = window.setInterval(AutoChangeSlider, 2000);
 
-
-document.getElementById("change-theme-btn").onclick = function() {
+document.getElementById("change-theme-btn").onclick = function () {
     var Theme = document.getElementById("theme-src")
     var ThemeLink = Theme.href
     if (ThemeLink.includes("css/mdb.min.css")) {

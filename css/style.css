@@ -12,7 +12,7 @@
 }
 
 body {
-   /*  background: #eee; */
+    /*  background: #eee; */
 }
 
 .sidenav {
@@ -67,7 +67,6 @@ body {
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: white;
     font-weight: bold;
 }
 
@@ -156,10 +155,10 @@ body {
     right: 10px;
     top: 10px;
     z-index: 10000;
-    color: #3E7C17;
-    background-color: #dddddd8f;
+    color: #ffffff;
+    background-color: #00000070;
     border-radius: 50%;
-    
+
 }
 
 /* home */
@@ -201,15 +200,35 @@ body {
     padding-top: 20px;
 }
 
-.line-hr {
+
+
+
+.progress {
     width: 90%;
-    height: 16px;
-    background-color: rgba(99, 99, 99, 0.219);
+    height: 15px;
+    background: #e1e4e8;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.color-hr {
-    background-color: #4ac000;
-    height: 15px;
+.progress-bar {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+}
+
+@keyframes progress-animation {
+    0% {
+
+        background-position: 100%
+    }
+
+    100% {
+
+        background-position: 0;
+    }
 }
 
 /* work */
@@ -244,7 +263,7 @@ body {
 
 /* comments */
 .img-comment {
-    border: 10px solid #eee;
+    border: 10px solid rgb(255, 255, 255);
     width: 130px;
     height: 130px;
     position: relative;
@@ -270,7 +289,6 @@ body {
 
 /* contact */
 #contact {
-    background-color: rgb(224, 224, 224);
     border-radius: 20px;
     margin: 30px 150px;
     padding: 5px 30px;
@@ -278,8 +296,6 @@ body {
 
 #contact input,
 #contact textarea {
-    background-color: rgb(201, 201, 201);
-    border: none;
     padding: 5px;
     border-radius: 10px;
 }
@@ -295,6 +311,6 @@ body {
 
 
 /* page 2 */
-.head{
+.head {
     background-color: #c9c9c9;
 }

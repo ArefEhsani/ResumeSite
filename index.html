@@ -11,10 +11,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <!-- MDB -->
     <link id="theme-src" rel="stylesheet" href="css/mdb.min.css">
-    <!-- <link rel="stylesheet" href="css/mdb.dark.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,54 +22,55 @@
     <div id="mySidenav" class="sidenav">
         <!-- icon close -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button id="change-theme-btn" class="btn rounded-pill text-light border border-light">شب و روز</button>
         <!-- mwnu -->
         <nav class="navigation">
             <ul>
                 <!-- home -->
                 <li class="list mt-3 active navbar-link">
-                    <a href="#home">
+                    <a href="#home" class="text-light">
                         <span class="icon"><i class="fas fa-home"></i></span>
                         <span class="title">خانه</span>
                     </a>
                 </li>
                 <!-- about -->
                 <li class="list navbar-link">
-                    <a href="#about">
+                    <a href="#about" class="text-light">
                         <span class="icon"><i class="far fa-user"></i></span>
                         <span class="title">درباره من</span>
                     </a>
                 </li>
                 <!-- skill -->
                 <li class="list navbar-link">
-                    <a href="#skill">
+                    <a href="#skill" class="text-light">
                         <span class="icon"><i class="far fa-file"></i></span>
                         <span class="title">مهارت ها</span>
                     </a>
                 </li>
                 <!-- work-samples -->
                 <li class="list navbar-link">
-                    <a href="#work-samples">
+                    <a href="#work-samples" class="text-light">
                         <span class="icon"><i class="fas fa-briefcase"></i></span>
                         <span class="title">نمونه کار ها</span>
                     </a>
                 </li>
                 <!-- services -->
                 <li class="list navbar-link">
-                    <a href="#services">
+                    <a href="#services" class="text-light">
                         <span class="icon"><i class="fas fa-server"></i></span>
                         <span class="title">خدمات</span>
                     </a>
                 </li>
                 <!-- Comments -->
                 <li class="list navbar-link">
-                    <a href="#Comments">
+                    <a href="#Comments" class="text-light">
                         <span class="icon"><i class="fas fa-users"></i></span>
                         <span class="title">نظرات مشتریان</span>
                     </a>
                 </li>
                 <!-- contact -->
                 <li class="list navbar-link">
-                    <a href="#contact">
+                    <a href="#contact" class="text-light">
                         <span class="icon"><i class="far fa-envelope"></i></span>
                         <span class="title">تماس با من</span>
                     </a>
@@ -77,14 +78,22 @@
             </ul>
         </nav>
     </div>
+
+
+
     <div id="main">
         <div id="icon" class="icon-open" onclick="myFunction(this) ,openNav()">
             <i class="fas fa-bars"></i>
         </div>
+
+
+
+
         <!--   home -->
         <section id="home" class="section">
             <!-- home image -->
-            <div class="bg-image text-center shadow-3-strong mb-5 text-white bg-header d-flex flex-column justify-content-center">
+            <div
+                class="bg-image text-center shadow-3-strong mb-5 text-white bg-header d-flex flex-column justify-content-center">
                 <h1 class="pt-5 mt-5 mb-3 fa-4x font-weight-bold">ناهید ناهیدیان</h1>
                 <p id="demo" class="fa-2x">
                     توسعه دهنده و طراح وب
@@ -167,44 +176,36 @@
                     </div>
                 </div>
             </div>
-
             <!-- fact -->
             <div class="container">
                 <div class="row icon-bottom-about">
                     <!-- team -->
                     <div class="col-sm-6 col-md-3 p-4">
-                        <i class="fas fa-users fa-4x text-warning"></i>
+                        <i class="fas fa-users fa-3x text-warning"></i>
                         <span class="counter fa-2x font-weight-bold" data-target="101">10</span>
                         <p><strong>کار تیمی</strong> برای پروژه های مختلف</p>
                     </div>
                     <!--  time-->
                     <div class="col-sm-6 col-md-3 p-4">
-                        <i class="fas fa-headphones fa-4x text-danger"></i>
+                        <i class="fas fa-headphones fa-3x text-danger"></i>
                         <span class="counter fa-2x font-weight-bold" data-target="3451">345</span>
                         <p><strong>ساعت پشتیبانی</strong> از محصولات</p>
                     </div>
                     <!-- project -->
                     <div class="col-sm-6 col-md-3 p-4">
-                        <i class="far fa-address-book fa-4x text-success"></i>
+                        <i class="far fa-address-book fa-3x text-success"></i>
                         <span class="counter fa-2x font-weight-bold" data-target="1456">456</span>
                         <p><strong>پروژه</strong> های با موفقیت به اتمام رسیده</p>
                     </div>
                     <!-- happy -->
                     <div class="col-sm-6 col-md-3 p-4">
-                        <i class="far fa-grin-alt fa-4x text-primary"></i>
+                        <i class="far fa-grin-alt fa-3x text-primary"></i>
                         <span class="counter fa-2x font-weight-bold" data-target="1511">151</span>
                         <p><strong>ارباب رجوع خوشحال</strong> برای پروژه هایشان</p>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
         <!-- skill -->
         <section id="skill" class="section skill ">
             <div class="container py-5">
@@ -214,74 +215,59 @@
                 <div class="row">
                     <!-- skill 1-->
                     <div class="col-md-6 p-1 mt-4 d-flex flex-column align-items-center">
-                        <div class="d-flex justify-content-between w-75">
+                        <div class="d-flex justify-content-between" style="width: 90%;">
                             <h6>HTML</h6>
-                            <h6>25%</h6>
+                            <h6>100%</h6>
                         </div>
-                        <div class="line-hr rounded-pill">
-                            <div class="color-hr rounded-pill w-25"></div>
+                        <div class="progress">
+                            <span class="progress-bar" style="width: 100%"></span>
                         </div>
                     </div>
-
-
-
-
                     <!-- skill 2 -->
                     <div class="col-md-6 p-1 mt-4 d-flex flex-column align-items-center">
-                        <div class="d-flex justify-content-between w-75">
-                            <h6>CSS</h6>
-                            <h6>50%</h6>
+                        <div class="d-flex justify-content-between" style="width: 90%;">
+                            <h6>Css</h6>
+                            <h6>85%</h6>
                         </div>
-                        <div class="line-hr rounded-pill">
-                            <div class="color-hr rounded-pill w-50"></div>
+                        <div class="progress">
+                            <span class="progress-bar" style="width: 85%"></span>
                         </div>
                     </div>
                     <!-- skill 3 -->
                     <div class="col-md-6 p-1 mt-4 d-flex flex-column align-items-center">
-                        <div class="d-flex justify-content-between w-75">
+                        <div class="d-flex justify-content-between" style="width: 90%;">
                             <h6>JavaScript</h6>
                             <h6>75%</h6>
                         </div>
-                        <div class="line-hr rounded-pill">
-                            <div class="color-hr rounded-pill w-75"></div>
+                        <div class="progress">
+                            <span class="progress-bar" style="width: 75%"></span>
                         </div>
                     </div>
                     <!-- skill 4 -->
                     <div class="col-md-6 p-1 mt-4 d-flex flex-column align-items-center">
-                        <div class="d-flex justify-content-between w-75">
+                        <div class="d-flex justify-content-between" style="width: 90%;">
                             <h6>Ui-Ux</h6>
-                            <h6>100%</h6>
+                            <h6>65%</h6>
                         </div>
-                        <div class="line-hr rounded-pill">
-                            <div class="color-hr rounded-pill w-100"></div>
+                        <div class="progress">
+                            <span class="progress-bar" style="width: 65%"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
         <!-- work-samples -->
         <section id="work-samples" class="section">
             <div class="container mt-5">
                 <!-- title -->
                 <h2 class="p-3 fw-bold">نمونه کار ها</h2>
-
                 <div>
                     <!-- menu -->
                     <ul>
-                        <li class="btn rounded-pill mx-2" id="all">همه</li>
-                        <li class="btn rounded-pill mx-2" id="team">کارهای تیمی</li>
-                        <li class="btn rounded-pill mx-2" id="fardi">کار های فردی</li>
+                        <li class="btn rounded-pill text-primary mx-2" id="all">همه</li>
+                        <li class="btn rounded-pill text-primary mx-2" id="team">کارهای تیمی</li>
+                        <li class="btn rounded-pill text-primary mx-2" id="fardi">کار های فردی</li>
                     </ul>
-
                     <!-- pic -->
                     <div>
                         <div id="image-place" class="row align-items-center justify-content-center">
@@ -290,41 +276,57 @@
                                 <!-- 1 -->
                                 <div class="col-md-6 col-lg-3">
                                     <div class="img">
-                                        <img src="img/work/1.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/1.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="img">
-                                        <img src="img/work/2.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/2.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- 2 -->
                                 <div class="col-md-6 col-lg-3">
                                     <div class="img">
-                                        <img src="img/work/3.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/3.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="img">
-                                        <img src="img/work/4.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/4.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- 3 -->
                                 <div class="col-md-6 col-lg-3">
                                     <div class="img">
-                                        <img src="img/work/5.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/5.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="img">
-                                        <img src="img/work/6.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/6.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- 4 -->
                                 <div class="col-md-6 col-lg-3">
                                     <div class="img">
-                                        <img src="img/work/7.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/7.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="img">
-                                        <img src="img/work/8.jpg" class="w-100 shadow-1-strong team" alt="">
+                                        <a href="work.html">
+                                            <img src="img/work/8.jpg" class="w-100 shadow-1-strong fardi" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -374,9 +376,6 @@
             <div class="container my-5">
                 <!-- title -->
                 <h2 class="p-3 fw-bold">نظرات</h2>
-
-
-
                 <!-- Comments page 1 -->
                 <div id="comment-1" class="row d-flex justify-content-center Comments-1 d-none">
                     <!-- card 1 -->
@@ -384,7 +383,7 @@
                         <div>
                             <img src="img/user/1.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>فاطمه</h5>
                             <p>
                                 من طراحی سایتمو انجام دادن خیلی ظاهر شیک و جذابیه و باعث خوشحالی من شده
@@ -396,7 +395,7 @@
                         <div>
                             <img src="img/user/2.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>علی </h5>
                             <p>
                                 طراحی های فوق العاده ای دارن، من چند تا ui داشتم که برام زدند.
@@ -408,7 +407,7 @@
                         <div>
                             <img src="img/user/3.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>سارا </h5>
                             <p>
                                 پشتیبانی خوبی ارائه میدن همینطور کیفیتشون واقعا عالیه .
@@ -423,7 +422,7 @@
                         <div>
                             <img src="img/user/4.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>ناهید</h5>
                             <p>
                                 من طراحی سایتمو انجام دادن خیلی ظاهر شیک و جذابیه و باعث خوشحالی من شده
@@ -435,7 +434,7 @@
                         <div>
                             <img src="img/user/5.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>مرضیه</h5>
                             <p>
                                 طراحی های فوق العاده ای دارن، من چند تا ui داشتم که برام زدند.
@@ -447,7 +446,7 @@
                         <div>
                             <img src="img/user/6.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>محمد</h5>
                             <p>
                                 پشتیبانی خوبی ارائه میدن همینطور کیفیتشون واقعا عالیه .
@@ -462,7 +461,7 @@
                         <div>
                             <img src="img/user/7.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>هانیه</h5>
                             <p>
                                 من طراحی سایتمو انجام دادن خیلی ظاهر شیک و جذابیه و باعث خوشحالی من شده
@@ -474,7 +473,7 @@
                         <div>
                             <img src="img/user/8.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>رضا</h5>
                             <p>
                                 طراحی های فوق العاده ای دارن، من چند تا ui داشتم که برام زدند.
@@ -486,7 +485,7 @@
                         <div>
                             <img src="img/user/9.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>اکبر</h5>
                             <p>
                                 پشتیبانی خوبی ارائه میدن همینطور کیفیتشون واقعا عالیه .
@@ -501,7 +500,7 @@
                         <div>
                             <img src="img/user/10.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>شاهرخ</h5>
                             <p>
                                 من طراحی سایتمو انجام دادن خیلی ظاهر شیک و جذابیه و باعث خوشحالی من شده
@@ -513,7 +512,7 @@
                         <div>
                             <img src="img/user/11.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>لیلا</h5>
                             <p>
                                 طراحی های فوق العاده ای دارن، من چند تا ui داشتم که برام زدند.
@@ -525,7 +524,7 @@
                         <div>
                             <img src="img/user/12.jpg" class="img-fluid rounded-circle img-comment">
                         </div>
-                        <div class="bg-light p-3 rounded-9 pt-5 shadow-3-strong">
+                        <div class="p-3 rounded-9 pt-5 shadow-5-strong">
                             <h5>زهرا</h5>
                             <p>
                                 پشتیبانی خوبی ارائه میدن همینطور کیفیتشون واقعا عالیه .
@@ -533,9 +532,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
                 <!-- circle -->
                 <div class="d-flex justify-content-center p-5">
                     <div class="dot-slider circle" onclick="ShowSlide(0)"></div>
@@ -543,18 +539,6 @@
                     <div class="dot-slider circle" onclick="ShowSlide(2)"></div>
                     <div class="dot-slider circle" onclick="ShowSlide(3)"></div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
 
@@ -572,7 +556,7 @@
 
         </section>
         <!-- contact -->
-        <section id="contact" class="section">
+        <section id="contact" class="section shadow-5-strong">
             <div class="container">
                 <!-- title -->
                 <h2 class="p-3 fw-bold">تماس با من</h2>
@@ -626,30 +610,27 @@
                 <!-- info contact -->
                 <div class="row g-0 d-flex justify-content-center">
                     <!-- phone -->
-                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
-                        <i class="fas fa-phone fa-2x text-dark p-4"></i>
+                    <div
+                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center shadow-2-strong m-1">
+                        <i class="fas fa-phone fa-2x p-4"></i>
                         <h6>09120000000</h6>
                     </div>
                     <!-- email -->
-                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
-                        <i class="fas fa-envelope fa-2x text-dark p-4"></i>
+                    <div
+                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center shadow-2-strong m-1">
+                        <i class="fas fa-envelope fa-2x p-4"></i>
                         <h6>email@gmail.com</h6>
                     </div>
                     <!-- address -->
-                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
-                        <i class="fas fa-map-marker-alt fa-2x text-dark p-4"></i>
+                    <div
+                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center shadow-2-strong m-1">
+                        <i class="fas fa-map-marker-alt fa-2x p-4"></i>
                         <h6>آمریکا، کالیفرنیا</h6>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
-
-
-
-
-    <button id="change-theme-btn">Change Theme</button>
 
 
 
