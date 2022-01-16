@@ -27,7 +27,7 @@ setInterval(EffectText, 4000)
 PlaceOfImage = document.getElementById("image-place")
 
 
-document.getElementById("all").onclick = function () {
+document.getElementById("all").onclick = function() {
     ListOfAll = document.querySelectorAll(".team, .Horizontal")
     console.log(ListOfAll)
     for (let image = 0; image < ListOfAll.length; image++) {
@@ -36,7 +36,7 @@ document.getElementById("all").onclick = function () {
 }
 
 
-document.getElementById("team").onclick = function () {
+document.getElementById("team").onclick = function() {
     ListOfCollective = document.querySelectorAll(".team")
     ListOfIndividualHide = document.querySelectorAll(".fardi")
     console.log(ListOfCollective);
@@ -49,7 +49,7 @@ document.getElementById("team").onclick = function () {
 }
 
 
-document.getElementById("fardi").onclick = function () {
+document.getElementById("fardi").onclick = function() {
     ListOfIndividual = document.querySelectorAll(".fardi")
     ListOfCollectiveHide = document.querySelectorAll(".team")
     console.log(ListOfIndividual)
@@ -133,7 +133,36 @@ window.addEventListener("scroll", () => {
     });
 });
 
-
-
-
 /* comments */
+ShowSlide(0)
+
+function ShowSlide(n) {
+    var slides = document.getElementsByClassName("Comments-1")
+    var dots = document.getElementsByClassName("dot-slider")
+    for (let slide = 0; slide < slides.length; slide++) {
+        const element = slides[slide];
+        element.classList.add("d-none")
+        if (slide === n) {
+            element.classList.remove("d-none")
+        }
+    }
+    for (let dot = 0; dot < dots.length; dot++) {
+        const element = dots[dot];
+        try {
+            element.classList.remove("act")
+        } catch (error) {
+            console.log(error)
+        }
+        if (dot === n) {
+            element.classList.add("act")
+        }
+    }
+}
+
+function AutoChangeSlider() {
+    index = Math.floor(Math.random() * 3)
+    console.log(index)
+    ShowSlide(index)
+}
+
+var timer = window.setInterval(AutoChangeSlider, 2000);

@@ -11,8 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css">
     <!-- <link rel="stylesheet" href="css/mdb.dark.min.css"> -->
@@ -85,8 +84,7 @@
         <!--   home -->
         <section id="home" class="section">
             <!-- home image -->
-            <div
-                class="bg-image text-center shadow-3-strong mb-5 text-white bg-header d-flex flex-column justify-content-center">
+            <div class="bg-image text-center shadow-3-strong mb-5 text-white bg-header d-flex flex-column justify-content-center">
                 <h1 class="pt-5 mt-5 mb-3 fa-4x font-weight-bold">ناهید ناهیدیان</h1>
                 <p id="demo" class="fa-2x">
                     توسعه دهنده و طراح وب
@@ -380,7 +378,7 @@
 
 
                 <!-- Comments page 1 -->
-                <div id="comment-1" class="row d-flex justify-content-center Comments-1">
+                <div id="comment-1" class="row d-flex justify-content-center Comments-1 d-none">
                     <!-- card 1 -->
                     <div class="col-sm-10 col-md-4 text-center">
                         <div>
@@ -540,10 +538,10 @@
 
                 <!-- circle -->
                 <div class="d-flex justify-content-center p-5">
-                    <div class="circle act"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                    <div class="dot-slider circle" onclick="ShowSlide(0)"></div>
+                    <div class="dot-slider circle" onclick="ShowSlide(1)"></div>
+                    <div class="dot-slider circle" onclick="ShowSlide(2)"></div>
+                    <div class="dot-slider circle" onclick="ShowSlide(3)"></div>
                 </div>
 
 
@@ -628,20 +626,17 @@
                 <!-- info contact -->
                 <div class="row g-0 d-flex justify-content-center">
                     <!-- phone -->
-                    <div
-                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
+                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
                         <i class="fas fa-phone fa-2x text-dark p-4"></i>
                         <h6>09120000000</h6>
                     </div>
                     <!-- email -->
-                    <div
-                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
+                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
                         <i class="fas fa-envelope fa-2x text-dark p-4"></i>
                         <h6>email@gmail.com</h6>
                     </div>
                     <!-- address -->
-                    <div
-                        class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
+                    <div class="col-md-3 rounded-9 p-3 d-flex flex-column justify-content-center align-items-center bg-light m-1">
                         <i class="fas fa-map-marker-alt fa-2x text-dark p-4"></i>
                         <h6>آمریکا، کالیفرنیا</h6>
                     </div>
