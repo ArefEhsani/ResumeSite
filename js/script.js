@@ -56,9 +56,14 @@ document.getElementById("fardi").onclick = function () {
 
 /* nav */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    document.getElementById("main").style.marginRight = "350px";
     document.getElementById("icon").classList.add("d-none")
+    if (screen.width <= 768) {
+        document.getElementById("mySidenav").style.width = "100vw";
+        document.getElementById("main").style.marginRight = "0px";
+    } else {
+        document.getElementById("mySidenav").style.width = "350px";
+        document.getElementById("main").style.marginRight = "350px";
+    }
 
 }
 
@@ -157,12 +162,25 @@ function AutoChangeSlider() {
 
 var timer = window.setInterval(AutoChangeSlider, 2000);
 
+
+
+/* dark */
 document.getElementById("change-theme-btn").onclick = function () {
     var Theme = document.getElementById("theme-src")
     var ThemeLink = Theme.href
     if (ThemeLink.includes("css/mdb.min.css")) {
         Theme.href = "css/mdb.dark.min.css"
+        let divcolor = document.querySelectorAll('.comment-user')
+        divcolor.forEach((color) => {
+            color.classList.remove('bg-l')
+            color.classList.add('bg-d')
+        })
     } else if (ThemeLink.includes("css/mdb.dark.min.css")) {
         Theme.href = "css/mdb.min.css"
+        let divcolor = document.querySelectorAll('.comment-user')
+        divcolor.forEach((color) => {
+            color.classList.remove('bg-d')
+            color.classList.add('bg-l')
+        })
     }
 }

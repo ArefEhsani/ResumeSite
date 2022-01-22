@@ -11,10 +11,6 @@
 
 }
 
-body {
-    /*  background: #eee; */
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -68,6 +64,7 @@ body {
     display: flex;
     text-decoration: none;
     font-weight: bold;
+    padding-right: 20px;
 }
 
 .navigation ul li.active a::after {
@@ -112,11 +109,6 @@ body {
     line-height: 60px;
     white-space: nowrap;
 }
-
-
-
-
-
 
 
 
@@ -200,9 +192,6 @@ body {
     padding-top: 20px;
 }
 
-
-
-
 .progress {
     width: 90%;
     height: 15px;
@@ -214,7 +203,7 @@ body {
 .progress-bar {
     display: block;
     height: 100%;
-    background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+    background: linear-gradient(90deg, #5dff3d, #005a0f 17%, #0d914f 34%, #00ff6a 51%, #0d914f 68%, #005a0f 85%, #5dff3d);
     background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
 }
@@ -230,6 +219,9 @@ body {
         background-position: 0;
     }
 }
+
+
+
 
 /* work */
 .img {
@@ -251,6 +243,10 @@ body {
 
 }
 
+
+
+
+
 /* services */
 #services .item {
     transition: all .4s;
@@ -260,6 +256,10 @@ body {
     background-color: #5c5c5c;
     color: #eee;
 }
+
+
+
+
 
 /* comments */
 .img-comment {
@@ -287,6 +287,10 @@ body {
     background-color: #39C0ED;
 }
 
+
+
+
+
 /* contact */
 #contact {
     border-radius: 20px;
@@ -306,11 +310,24 @@ body {
     outline: 1px solid green;
 }
 
-
-
+@media screen and (max-width:1024px) {
+    #contact {
+        margin: 10px;
+        padding: 10px;
+    }
+}
 
 
 /* page 2 */
 .head {
     background-color: #c9c9c9;
+}
+
+
+
+.bg-d{
+    background-color: #474747;
+}
+.bg-l{
+    background-color: #ebebeb;
 }
